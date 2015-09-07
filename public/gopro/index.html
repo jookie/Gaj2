@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+
 <!--Stream your Desktop to HTML5 Video Element-->
 <!--
 ffmpeg -re -i "http://10.5.5.9:8080/live/amba.m3u8"
@@ -101,27 +101,37 @@ C:\Program Files (x86)\VideoLAN\VLC\plugins
 C:\Program Files (x86)\VideoLAN\VLC\plugins
 http://www.videolan.org//doc/
 -->
-<html>
-
-<head lang="en">
-    <title>Go Pro Preview</title>
+<!DOCTYPE html>
+<html  lang="en">
+<head>
+    <title>GoPro Preview</title>
     <meta http-equiv="Content-type" content="text/html; charset=utf-8">
     <meta charset="utf-8">
-    <meta name="viewport"
-    content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-
     <meta name="author" content="Dov Peles">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+    <link rel="chrome-webstore-item" href="https://chrome.google.com/webstore/detail/ajhifddimkapgcifgcodmmfdlknahffk">
+
     <link rel="stylesheet" href="//cdn.webrtc-experiment.com/style.css">
-    <link rel="chrome-webstore-item"
-          href="https://chrome.google.com/webstore/detail/ajhifddimkapgcifgcodmmfdlknahffk">
+    <link rel="stylesheet" href="index.css">
+
+
+    <script src="../common.js"></script>
+    <script src="index.js"></script>
 
     <script src = 'heroproapp.js'> </script>
     <!-- scripts used for screen-sharing -->
-    <script src='//cdn.webrtc-experiment.com/firebase.js'   ></script>
     <script src="//cdn.webrtc-experiment.com/getScreenId.js"></script>
     <script src="//cdn.webrtc-experiment.com/screen.js"     ></script>
+
+    <!-- scripts used for WebRTC connections -->
+    <script src="//cdn.webrtc-experiment.com/RTCMultiConnection.js"></script>
+    <script src="//cdn.webrtc-experiment.com/firebase.js"></script>
+
+    <script>document.createElement('article');</script>
+
     <script type='text/JavaScript'>
         function getXhr() {
             var xhr = null;

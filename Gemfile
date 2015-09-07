@@ -40,10 +40,6 @@ gem 'tzinfo-data'
 #rails g scaffold product name:string length:float width:float height:float weight:float
 # price:float
 # https://github.com/pageman/heroku-client
-# https://github.com/pageman/heroku-client
-
-# https://github.com/pageman/heroku-client
-# https://github.com/pageman/heroku-client
 
 # > bundle install
 # > git add Gemfile Gemfile.lock
