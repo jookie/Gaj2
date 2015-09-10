@@ -114,6 +114,11 @@ GoPro RTMP streaming with FFmpeg
 
 GOPRO HERO CONTROL SOFTWARE
 
+
+http://walterebert.com/playground/video/hls/
+https://bitbucket.org/walterebert/ffmpeg-hls/src/f14ccab90f1884ecee9bbccd025af87a3b2f837a?at=default
+https://sonnati.wordpress.com/2012/07/02/ffmpeg-the-swiss-army-knife-of-internet-streaming-part-v/
+Broadcasting using an HLS source
 -->
 <!DOCTYPE html>
 <html  lang="en">
@@ -178,28 +183,18 @@ GOPRO HERO CONTROL SOFTWARE
             }
 
             /*          pw = document.getElementById('wifiPassword').value
-             */
+            */
             pw = 'goprohero27'
             xhr.open('GET', 'http://10.5.5.9:80/' + device + '/' + app + '?t=' + pw + '&p=' + command);
             xhr.send(null);
         }
     </script>
-    <!---write this in your head tag:--->
-    <!-- <script src="http://jwpsrv.com/library/9ompKvFTEeKn+hIxOQulpA.js"></script>-->
-    <!---Customizable JW Player:-->
-    <!--<div id='goproherolive'>Loading the player..</div>
-       <script type='text/javascript'>jwplayer('goproherolive').setup({
-               file: 'http://10.5.5.9:8080/live/amba.m3u8',
-               title: 'GoPro HERO Live Stream',width: '100%',aspectratio: '16:9',
-               callback: 'false',autostart: 'true'});</script>-->
+
 </head>
 <body>
 <div id="buttons-container"> </div>
-<!--<div id="control1"><br>
-    &nbsp;
-</div>-->
+&nbsp;
 <hr>
-
 <!-- just copy this <section> and next script -->
 <section class="experiment">
     <section>
